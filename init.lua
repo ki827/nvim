@@ -1,0 +1,5 @@
+require('common')
+require('plugin')
+require('keymap')
+require('colorscheme')
+require('telescopex')
