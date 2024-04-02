@@ -1,3 +1,4 @@
+local vim = vim
 -- leader
 vim.g.mapleader = ' '
 -- ui 

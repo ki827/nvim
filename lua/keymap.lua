@@ -1,8 +1,9 @@
+local vim = vim
 -- keymap
 -- insert mode move
-local options = { 
-    silent = true, 
-    noremap = true 
+local options = {
+    silent = true,
+    noremap = true
 }
 vim.keymap.set('i', '<C-p>', '<Up>', options)
 vim.keymap.set('i', '<C-n>', '<Down>', options)
@@ -14,14 +15,14 @@ vim.keymap.set('i', '<C-;>', '<End>;', options)
 vim.keymap.set('i', '<C-cr>', '<End>;<cr>', options)
 
 -- quit & save
-local options = { noremap = true } 
+local options = { noremap = true }
 vim.keymap.set('n', '<leader>qq', ':q<cr>', options)
 vim.keymap.set('n', '<leader>qs', ':wqa<cr>', options)
 vim.keymap.set('n', '<leader>fS', ':wa<cr>', options)
 vim.keymap.set('n', '<leader>fs', ':w<cr>', options)
 
 -- telescope
-local options = { noremap = true } 
+local options = { noremap = true }
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, options)
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, options)
