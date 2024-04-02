@@ -7,3 +7,9 @@ vim.opt.number = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
+
+vim.o.signcolumn = "yes"
+vim.o.splitbelow = true
+vim.o.splitright = true
+vim.o.timeoutlen = 400
+vim.o.undofile = true
