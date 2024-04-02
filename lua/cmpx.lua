@@ -13,7 +13,7 @@ cmp.setup({
         ['<C-b>'] = cmp.mapping.scroll_docs(-4),
         ['<C-f>'] = cmp.mapping.scroll_docs(4),
         ['<C-Space>'] = cmp.mapping.complete(),
-        ['<C-e>'] = cmp.mapping.abort(),
+        ['<C-g>'] = cmp.mapping.abort(),
         ['<CR>'] = cmp.mapping.confirm({ select = true }),
     }),
 
@@ -23,9 +23,8 @@ cmp.setup({
     }, {
         { name = 'buffer' },
     }),
-    completion = {
-        completeopt = 'menu,menunone,noinsert'
-    },
+    preselect = cmp.PreselectMode.None,
+    completion = { completeopt = "menu,menuone,noselect" },
 })
 
 cmp.setup.filetype('gitcommit', {
