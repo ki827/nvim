@@ -1,5 +1,12 @@
 local vim = vim
 local lspconfig = require('lspconfig')
+local diagnostics = {
+  virtual_text = false,
+  virtual_improved = {
+    current_line = 'only',
+  },
+}
+vim.diagnostic.config(diagnostics)
 
 local servers = { 'rust_analyzer', 'clangd', 'lua_ls' }
 local on_attach = function(_, bufnr)
