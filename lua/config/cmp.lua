@@ -5,10 +5,10 @@ local luasnip = require 'luasnip'
 local cmp = require 'cmp'
 cmp.setup {
     completion = {
-        completeopt = "menu,menuone",
+        completeopt = "menu,menuone,noselect",
     },
     window = {
-       documentation = false,
+        documentation = false,
     },
     snippet = {
         expand = function(args)
@@ -48,6 +48,7 @@ cmp.setup {
     sources = {
         { name = 'nvim_lsp' },
         { name = 'luasnip' },
+        { name = 'buffer' },
         { name = "path" },
     },
 }
