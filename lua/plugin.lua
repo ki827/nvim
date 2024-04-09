@@ -44,4 +44,7 @@ require('lazy').setup({
     {
         'nvim-lualine/lualine.nvim',
     },
+    {
+        "j-hui/fidget.nvim",
+    }
 })

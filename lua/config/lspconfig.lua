@@ -5,6 +5,9 @@ local diagnostics = {
   virtual_improved = {
     current_line = 'only',
   },
+  underline = false,
+  signs = true,
+  update_in_insert = false
 }
 vim.diagnostic.config(diagnostics)
 
